@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DetailsActivity">
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cardViewID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <RelativeLayout
+            android:background="@color/Orange"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/detailsNameID"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/detailsUsernameID"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/detailsNameID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/detailsEmailID"
+                android:textStyle="italic"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detailsUsernameID"
+                android:layout_marginTop="1dp"
+                android:text="TextView"
+                android:paddingBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/detailsPhoneId"
+                android:textColor="@color/maroon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailsEmailID"
+                android:text="TextView"/>
+
+            <TextView
+                android:id="@+id/detailsCompanyID"
+                android:textColor="@color/maroon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailsPhoneId"
+                android:text="TextView"/>
+
+            <TextView
+                android:id="@+id/detailsStreetID"
+                android:textColor="@color/maroon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:layout_below="@id/detailsCompanyID"
+                android:text="TextView"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewGrid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/detailsStreetID" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
