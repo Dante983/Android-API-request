@@ -73,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
         //Use a LinearLayoutManager with default vertical orientation
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(MainActivity.this);
-        //GridLayoutManager gridLayoutManager = new GridLayoutManager(MainActivity.this, 3);
         myRecyclerView.setLayoutManager(layoutManager);
 
         //Set the Adapter to the RecyclerView
